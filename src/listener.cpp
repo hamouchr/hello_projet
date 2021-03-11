@@ -9,7 +9,7 @@ using namespace std_msgs;
 void infoCallback(/*... msg*/) {
 
   // A DECOMMENTER ...
-  // ROS_INFO("Chatter Listener : I heard msg: [%s]", msg.data.c_str());
+  // ROS_INFO("Info Listener : I heard msg: [%s]", msg.data.c_str());
 }
 
 int main(int argc, char **argv) {
