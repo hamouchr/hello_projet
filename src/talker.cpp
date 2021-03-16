@@ -1,8 +1,15 @@
+#include <iostream>
 #include <ros/ros.h>
+#include <sstream>
 #include <std_msgs/String.h>
 
+// Les namespaces
+using namespace std;
 using namespace ros;
 using namespace std_msgs;
+
+// prototypes des fonctions
+string int_to_str(int x);
 
 int main(int argc, char **argv) {
 
@@ -33,4 +40,14 @@ int main(int argc, char **argv) {
     loop_rate.sleep();
   }
   return 0;
+}
+
+
+
+
+
+string int_to_str(int x) {
+  stringstream ss;
+  ss << x;
+  return ss.str();
 }
